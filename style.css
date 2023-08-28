@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Your Selected Font', sans-serif;
+    background-color: #1e1e1e;
+}
+
+/* Landing Section Styles */
+
+.landing {
+    /* background-color:#1e1e1e; */
+    padding: 2rem;
+    /* text-align: center; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.name {
+    /* text-align: center; */
+    font-size: 2rem;
+    padding: 1rem;
+    color: #faf9fa;
+    /* background-color: #f0f0f0; */
+    /* border-bottom: 2px solid #663399; */
+    text-decoration: none;
+    margin-left: 5rem;
+    margin-top: 4rem;
+}
+
+.landing h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.landing .intro {
+    flex: 1;
+    text-align: left;
+    color: #fff;
+    /* background-color: #663399; */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 45rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.landing .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-download {
+    text-decoration: none;
+    background-color: #f549f5;
+    border-radius: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    display: inline-block;
+    width: 7rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: #fff;
+    transition: background-color 0.3s;
+    margin-top: 3rem;
+    margin-left: 16rem;
+
+}
+
+.btn-download:hover {
+    background-color: #d32ad2;
+}
+
+.landing .intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.landing .photo {
+    flex: 1;
+    text-align: center;
+}
+
+.landing .photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.landing .buttons {
+    flex: 1;
+    text-align: right;
+}
+
+.landing .buttons a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #663399;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.landing .buttons a:hover {
+    background-color: #512b80;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .landing {
+        flex-direction: column;
+    }
+
+    .landing .intro {
+        margin-bottom: 2rem;
+    }
+
+    .landing .buttons {
+        text-align: center;
+    }
+}
