@@ -1,3 +1,4 @@
+// dynamic typing
 var typed = new Typed(".text", {
     strings: ["Student.", "Frontend Devloper.", "Webpage Designer."],
     typeSpeed: 40,
@@ -6,3 +7,7 @@ var typed = new Typed(".text", {
     loop: true
 
 })
+// document.addEventListener("DOMContentLoaded", function () {
+    
+//     document.body.style.opacity = 1;
+// });

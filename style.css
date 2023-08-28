@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body,
 h1,
@@ -15,13 +18,16 @@ p {
 body {
     font-family: 'Your Selected Font', sans-serif;
     background-color: #032228;
+    transition: opacity 0.5s ease-in-out;
 }
+
 
 /* Landing page Styles */
 
 .landing {
     /* background-color:#1e1e1e; */
     padding: 2rem;
+    height: 100vh;
     /* text-align: center; */
     /* display: flex; */
     /* justify-content: space-between; */
@@ -225,8 +231,8 @@ body {
 .landing .about-button:hover .btn-about{
     background-color: #d32ad2 ;
     box-shadow: 0 0 5px #f050f0,
-    0 0 25px #f050f0,0 0 50px #f050f0,
-    0 0 100px #f050f0,0 0 200px #f050f0;
+    0 0 20px #f050f0,0 0 42px #f050f0,
+    0 0 67px #f050f0,0 0 130px #f050f0;
 }
 
 /* Media Query for Responsive Design */
@@ -244,6 +250,90 @@ body {
     }
 
 }
+
+/* about page  */
+
+.about {
+    position: relative;
+    display: flex;
+    
+    top: 100vh;
+}
+
+.about-content {
+    
+} 
+
+.photo_abt {
+    flex: 1;
+    text-align: right;
+    position: relative;
+    animation: slideRight 1s ease forwards;
+    opacity: 0 ;
+
+} 
+.photo_abt::before {
+    content: "";
+    display: block;
+    width: 23.19rem;
+    height: 25.25rem;
+    border: 2px solid #663399;
+    border-radius: 24%;
+    position: absolute;
+    bottom: 7.25rem;
+    left: 8.68rem;
+    z-index: 1;
+    box-shadow: 0 0 5px #f050f0,
+    0 0 20px #f050f0,0 0 30px #f050f0,
+    0 0 50px #f050f0,0 0 80px #f050f0;
+}
+
+
+ @media (max-width: 768px) {
+    
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo_abt{
+        position: static;
+        transform: none; 
+        margin-top:1.25rem; 
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    right: 29.875rem; 
+    bottom: 29.875rem;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+.nav-button {
+    background-color: #d32ad2;
+    color: white;
+    border: none;
+    padding:0.625rem 1rem;
+    cursor: pointer;
+    border-radius: 48%;
+    width: 7rem;
+    height: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-button:hover{
+    box-shadow: 0 0 5px #f050f0,
+    0 0 7px #f050f0,0 0 10px #f050f0,
+    0 0 18px #f050f0,0 0 23px #f050f0;
+}
+
 
 /* keyFrames for animations  */
 
@@ -275,5 +365,13 @@ body {
     100%{
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
     }
 }
