@@ -14,7 +14,7 @@ p {
 
 body {
     font-family: 'Your Selected Font', sans-serif;
-    background-color: #1e1e1e;
+    background-color: #032228;
 }
 
 /* Landing Section Styles */
@@ -65,6 +65,12 @@ body {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+.landing .intro h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.landing .intro h3 span{
+    color: #f549f5;
+}
 
 .btn-download {
     text-decoration: none;
@@ -85,6 +91,9 @@ body {
 
 .btn-download:hover {
     background-color: #d32ad2;
+    box-shadow: 0 0 5px #f050f0,
+    0 0 25px #f050f0,0 0 50px #f050f0,
+    0 0 100px #f050f0,0 0 200px #f050f0;
 }
 
 .landing .intro p {
@@ -156,6 +165,9 @@ body {
 }
 .landing .about-button:hover .btn-about{
     background-color: #d32ad2 ;
+    box-shadow: 0 0 5px #f050f0,
+    0 0 25px #f050f0,0 0 50px #f050f0,
+    0 0 100px #f050f0,0 0 200px #f050f0;
 }
 
 /* Media Query for Responsive Design */
