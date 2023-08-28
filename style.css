@@ -38,7 +38,10 @@ body {
     text-decoration: none;
     margin-left: 5rem;
     margin-top: 4rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
+
 
 .landing h1 {
     font-size: 3rem;
@@ -64,7 +67,16 @@ body {
 .landing .intro h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    /* animation-delay: .5s; */
 }
+.landing .intro h3{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    /* animation-delay: .6s; */
+}
+
 .landing .intro h3:nth-of-type(2){
     margin-bottom: 30px;
 }
@@ -86,6 +98,10 @@ body {
     transition: background-color 0.4s;
     margin-top: 3rem;
     margin-left: 16rem;
+    transition: .5s ease;
+    animation: slideRight 1s ease forwards;
+    opacity: 0 ;
+    animation-delay:calc(.2s*var(--j));
 
 }
 
@@ -100,6 +116,10 @@ body {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    opacity: o;
+    animation: slideRight 1s ease forwards;
+    /* animation-delay: .8s; */
+
 }
 
 
@@ -124,6 +144,8 @@ body {
     flex: 1;
     text-align: right;
     position: relative;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0 ;
 }
 
 .landing .photo::before {
@@ -148,6 +170,10 @@ body {
     bottom: 6.5625rem;
     right: 30.375rem;
     transform: translate(50%, 50%);
+    transition: .5s ease;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0 ;
+    animation-delay:calc(.2s*var(--i));
 }
 
 .landing .social-icons a {
@@ -174,7 +200,10 @@ body {
     bottom: 7.3125rem;
     right:  3.437rem;
     transform: translate(-50%, 50%);
-    transition: background-color 0.4s
+    transition: background-color 0.4s;
+    animation:slideLeft 1s ease forwards;
+    opacity: 0 ;
+    animation-delay: .4s;
    
 }
 
@@ -214,4 +243,37 @@ body {
         text-align: center;
     }
 
+}
+
+/* keyFrames for animations  */
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
