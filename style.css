@@ -353,9 +353,8 @@ body {
     position: relative;
     bottom: 2rem;
     right: 20rem;
-
-
 }
+
 
 .slide-button {
     display: flex;
@@ -485,35 +484,58 @@ body {
 }
 
 .card-content .course {
-    color:  white;
+    color: white;
     font-weight: bold;
     position: relative;
     top: -1rem;
-    left:-3rem;
+    left: -3rem;
 }
 
 .card-content .subject {
-    position:relative;
-    color:white ;
+    position: relative;
+    color: white;
     top: -2rem;
-    left:-3rem;
+    left: -3rem;
 }
 
 .card-content .mark {
-    position:relative;
-    color:white;
+    position: relative;
+    color: white;
     font-weight: bold;
     top: -1rem;
-    left:-3.5rem;
+    left: -3.5rem;
 }
 
 .card-content .time {
-    color:white ;
-    position:relative;
+    color: white;
+    position: relative;
     top: -1rem;
-    left:-3.5rem;
+    left: -3.5rem;
 }
 
+/* skill cards  */
+.skills-slide {
+    width: 24.44rem;
+    height: 30.4rem;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    bottom: 2rem;
+    right: 20rem;
+}
+
+/* experience cards  */
+.experience-slide {
+    width: 24.44rem;
+    height: 30.4rem;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    bottom: 2rem;
+    right: 20rem;
+}
 
 
 /* keyFrames for animations  */
