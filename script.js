@@ -7,7 +7,4 @@ var typed = new Typed(".text", {
     loop: true
 
 })
-// document.addEventListener("DOMContentLoaded", function () {
-    
-//     document.body.style.opacity = 1;
-// });
+

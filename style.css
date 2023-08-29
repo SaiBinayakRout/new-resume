@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 html{
     scroll-behavior: smooth;
@@ -204,7 +205,7 @@ body {
 .landing .about-button {
     position: absolute;
     bottom: 7.3125rem;
-    right:  3.437rem;
+    right:  6.437rem;
     transform: translate(-50%, 50%);
     transition: background-color 0.4s;
     animation:slideLeft 1s ease forwards;
@@ -306,10 +307,10 @@ body {
 .buttons {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1.15rem;
     position: absolute;
-    right: 29.875rem; 
-    bottom: 29.875rem;
+    right: 26.875rem; 
+    bottom: 33.875rem;
     transform: translate(0, -50%);
     z-index: 1;
 }
@@ -333,6 +334,87 @@ body {
     0 0 7px #f050f0,0 0 10px #f050f0,
     0 0 18px #f050f0,0 0 23px #f050f0;
 }
+
+ /* cards in about section  */
+  /* education cards  */
+
+  .education-slide {
+    width: 23.44rem;
+    height: 27.4rem;
+    display:flex;
+    text-align: center;
+    overflow: hidden;
+    position:relative;
+    bottom:5rem;
+    right:27rem;
+  }
+  .education-slide a {
+    display: inline-flex;
+    width: 3rem; /* Adjust the button size as needed */
+    height: 3rem; /* Adjust the button size as needed */
+    background-color: #663399;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0.5rem; /* Add margin between the buttons */
+    position: absolute;
+    transition: background-color 0.3s ease-in-out;
+    bottom:-2rem;
+    right:0rem;
+}
+.education-slide a:hover {
+    background-color: #5a2d9b; /* Darken the color on hover */
+}
+  
+  .slides {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 2rem;
+  
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 23.19rem;
+    height: 25.25rem;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  .slider > a:active {
+    top: 1px;
+  }
+  .slider > a:focus {
+    background: #000;
+  }  
 
 
 /* keyFrames for animations  */

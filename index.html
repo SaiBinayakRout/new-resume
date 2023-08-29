@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <title>Hi! I am Sai Binayak Rout</title>
-    
-
-</head>
-<body>
+  </head>
+  <body>
     <section class="landing">
-        <div class="name active" style="--j:1">HELLO !</div>
-        <div class="intro">
-            <h2 style="--j:2">Sai Binayak Rout</h2>
-            <h3 style="--j:3">I'm a <span class="text"></span></h3>
-            <p style="--j:4"> 
-                A pre-final year engineering student at Veer Surendra Sai University of Technology.
-                I code in HTML, CSS, JavaScript, and Python, &amp; always eager to level up my web development skills.
-            </p>
-            <a href="#" class="btn-download" style="--j:5">Download CV</a>
-            <!-- <a href="#about" class="btn-about">About Me</a> -->
+      <div class="name active" style="--j: 1">HELLO !</div>
+      <div class="intro">
+        <h2 style="--j: 2">Sai Binayak Rout</h2>
+        <h3 style="--j: 3">I'm a <span class="text"></span></h3>
+        <p style="--j: 4">
+          A pre-final year engineering student at Veer Surendra Sai University
+          of Technology. I code in HTML, CSS, JavaScript, and Python, &amp;
+          always eager to level up my web development skills.
+        </p>
+        <a href="#" class="btn-download" style="--j: 5">Download CV</a>
+        <!-- <a href="#about" class="btn-about">About Me</a> -->
+      </div>
+      <div class="photo active" style="--i: 1">
+        <div class="social-icons">
+          <a
+            href="https://github.com/your-github-profile"
+            target="_blank"
+            style="--i: 2"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            style="--i: 3"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://instagram.com/your-instagram-profile"
+            target="_blank"
+            style="--i: 4"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
-        <div class="photo active" style="--i:1">
-            <div class="social-icons">
-                <a href="https://github.com/your-github-profile" target="_blank" style="--i:2"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" style="--i:3"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://instagram.com/your-instagram-profile" target="_blank" style="--i:4"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="about-button" style="--i:2">
-                <a href="#about" class="btn-about">About Me</a>
-            </div>
+        <div class="about-button" style="--i: 2">
+          <a href="#about" class="btn-about">About Me</a>
         </div>
+      </div>
     </section>
     <section id="about" class="about">
-        <div class="about-content">
-            <!-- <a href="#" class="btn-back">Back</a>  -->
+        
+      <div class="photo_abt"></div>
+      <div class="buttons">
+        <button class="nav-button" data-target="education">Educations</button>
+        <button class="nav-button" data-target="skills">Skills</button>
+        <button class="nav-button" data-target="experience">Experience</button>
+      </div>
+
+      <div class="education-slide">
+        <a href="#Collage">1</a>
+        <a href="#Intermideate">2</a>
+        <a href="#Schooling">3</a>
+
+        <div class="slides">
+          <div id="Collage">1</div>
+          <div id="Intermideate">2</div>
+          <div id="Schooling">3</div>
         </div>
-        <div class="buttons">
-            <button class="nav-button" data-target="education">Educations</button>
-            <button class="nav-button" data-target="skills">Skills</button>
-            <button class="nav-button" data-target="experience">Experience</button>
-        </div>
-        <div class="photo_abt">
-            
-        </div>
+      </div>
+
     </section>
-</body>
+  </body>
 </html>
