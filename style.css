@@ -3,7 +3,8 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -78,16 +79,18 @@ body {
     animation: slideRight 1s ease forwards;
     /* animation-delay: .5s; */
 }
-.landing .intro h3{
+
+.landing .intro h3 {
     opacity: 0;
     animation: slideRight 1s ease forwards;
     /* animation-delay: .6s; */
 }
 
-.landing .intro h3:nth-of-type(2){
+.landing .intro h3:nth-of-type(2) {
     margin-bottom: 30px;
 }
-.landing .intro h3 span{
+
+.landing .intro h3 span {
     color: #f549f5;
 }
 
@@ -107,16 +110,16 @@ body {
     margin-left: 16rem;
     transition: .5s ease;
     animation: slideRight 1s ease forwards;
-    opacity: 0 ;
-    animation-delay:calc(.2s*var(--j));
+    opacity: 0;
+    animation-delay: calc(.2s*var(--j));
 
 }
 
 .btn-download:hover {
     background-color: #d32ad2;
     box-shadow: 0 0 5px #f050f0,
-    0 0 25px #f050f0,0 0 50px #f050f0,
-    0 0 100px #f050f0,0 0 200px #f050f0;
+        0 0 25px #f050f0, 0 0 50px #f050f0,
+        0 0 100px #f050f0, 0 0 200px #f050f0;
 }
 
 .landing .intro p {
@@ -152,7 +155,7 @@ body {
     text-align: right;
     position: relative;
     animation: slideLeft 1s ease forwards;
-    opacity: 0 ;
+    opacity: 0;
 }
 
 .landing .photo::before {
@@ -167,9 +170,10 @@ body {
     right: 8.68rem;
     z-index: -1;
     box-shadow: 0 0 5px #f050f0,
-    0 0 20px #f050f0,0 0 30px #f050f0,
-    0 0 50px #f050f0,0 0 80px #f050f0;
+        0 0 20px #f050f0, 0 0 30px #f050f0,
+        0 0 50px #f050f0, 0 0 80px #f050f0;
 }
+
 .landing .social-icons {
     display: flex;
     flex-direction: row;
@@ -179,8 +183,8 @@ body {
     transform: translate(50%, 50%);
     transition: .5s ease;
     animation: slideLeft 1s ease forwards;
-    opacity: 0 ;
-    animation-delay:calc(.2s*var(--i));
+    opacity: 0;
+    animation-delay: calc(.2s*var(--i));
 }
 
 .landing .social-icons a {
@@ -190,12 +194,13 @@ body {
     margin-right: 2rem;
     transition: color 0.3s;
 }
+
 .landing .social-icons a:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .landing .photo .social-icons a:hover {
-    color:#d32ad2;
+    color: #d32ad2;
     /* box-shadow: 0 0 5px #f050f0,
     0 0 25px #f050f0,0 0 50px #f050f0,
     0 0 100px #f050f0,0 0 200px #f050f0; */
@@ -205,13 +210,13 @@ body {
 .landing .about-button {
     position: absolute;
     bottom: 7.3125rem;
-    right:  6.437rem;
+    right: 6.437rem;
     transform: translate(-50%, 50%);
     transition: background-color 0.4s;
-    animation:slideLeft 1s ease forwards;
-    opacity: 0 ;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
     animation-delay: .4s;
-   
+
 }
 
 .landing .about-button .btn-about {
@@ -226,14 +231,15 @@ body {
     width: 7.13rem;
     display: flex;
     text-align: center;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
 }
-.landing .about-button:hover .btn-about{
-    background-color: #d32ad2 ;
+
+.landing .about-button:hover .btn-about {
+    background-color: #d32ad2;
     box-shadow: 0 0 5px #f050f0,
-    0 0 20px #f050f0,0 0 42px #f050f0,
-    0 0 67px #f050f0,0 0 130px #f050f0;
+        0 0 20px #f050f0, 0 0 42px #f050f0,
+        0 0 67px #f050f0, 0 0 130px #f050f0;
 }
 
 /* Media Query for Responsive Design */
@@ -257,22 +263,21 @@ body {
 .about {
     position: relative;
     display: flex;
-    
+
     top: 100vh;
 }
 
-.about-content {
-    
-} 
+.about-content {}
 
 .photo_abt {
     flex: 1;
     text-align: right;
     position: relative;
     animation: slideRight 1s ease forwards;
-    opacity: 0 ;
+    opacity: 0;
 
-} 
+}
+
 .photo_abt::before {
     content: "";
     display: block;
@@ -285,22 +290,22 @@ body {
     left: 8.68rem;
     z-index: 1;
     box-shadow: 0 0 5px #f050f0,
-    0 0 20px #f050f0,0 0 30px #f050f0,
-    0 0 50px #f050f0,0 0 80px #f050f0;
+        0 0 20px #f050f0, 0 0 30px #f050f0,
+        0 0 50px #f050f0, 0 0 80px #f050f0;
 }
 
 
- @media (max-width: 768px) {
-    
+@media (max-width: 768px) {
+
     .about {
         flex-direction: column;
         align-items: center;
     }
-    
-    .photo_abt{
+
+    .photo_abt {
         position: static;
-        transform: none; 
-        margin-top:1.25rem; 
+        transform: none;
+        margin-top: 1.25rem;
     }
 }
 
@@ -309,7 +314,7 @@ body {
     flex-direction: row;
     gap: 1.15rem;
     position: absolute;
-    right: 21.375rem; 
+    right: 21.375rem;
     bottom: 31.875rem;
     transform: translate(0, -50%);
     z-index: 1;
@@ -319,47 +324,48 @@ body {
     background-color: #d32ad2;
     color: white;
     border: none;
-    padding:0.625rem 1rem;
+    padding: 0.625rem 1rem;
     cursor: pointer;
     border-radius: 48%;
     width: 7rem;
-    height: 3rem; 
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.nav-button:hover{
+
+.nav-button:hover {
     box-shadow: 0 0 5px #f050f0,
-    0 0 7px #f050f0,0 0 10px #f050f0,
-    0 0 18px #f050f0,0 0 23px #f050f0;
+        0 0 7px #f050f0, 0 0 10px #f050f0,
+        0 0 18px #f050f0, 0 0 23px #f050f0;
 }
 
- /* cards in about section  */
-  /* education cards  */
+/* cards in about section  */
+/* education cards  */
 
-  .education-slide {
+.education-slide {
     width: 24.44rem;
     height: 30.4rem;
-    display:flex;
+    display: flex;
     text-align: center;
     overflow: hidden;
-    position:relative;
-    bottom:2rem;
-    right:20rem;
+    position: relative;
+    bottom: 2rem;
+    right: 20rem;
 
-    
-  }
-  
-  .slide-button {
+
+}
+
+.slide-button {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     position: absolute;
-    bottom: 2rem; 
-    right: 0rem; 
-  } 
+    bottom: 2rem;
+    right: 0rem;
+}
 
-  .slide-button a {
+.slide-button a {
     display: inline-flex;
     width: 2rem;
     height: 2rem;
@@ -372,18 +378,18 @@ body {
     margin: 0 0.5rem;
     transition: background-color 0.3s ease-in-out;
     line-height: 3rem;
-  }
+}
 
-  
+
 .slide-button a:hover {
     /* background-color: #5a2d9b; */
     box-shadow: 0 0 5px #f050f0,
-    0 0 7px #f050f0,0 0 10px #f050f0,
-    0 0 18px #f050f0,0 0 23px #f050f0;
+        0 0 7px #f050f0, 0 0 10px #f050f0,
+        0 0 18px #f050f0, 0 0 23px #f050f0;
 
 }
-  
-  .slides {
+
+.slides {
     display: flex;
     position: relative;
     overflow-x: hidden;
@@ -391,16 +397,17 @@ body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 2rem;
-  
-  }
-  .slides > div {
+
+}
+
+.slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 23.19rem;
     height: 25.25rem;
     margin-right: 50px;
     border-radius: 10px;
-    background:transparent;
+    background: transparent;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
@@ -409,21 +416,22 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 100px;
-    border: 0px solid transparent; 
+    border: 0px solid transparent;
 
-     background: radial-gradient(circle at top left,rgba(240, 80, 240, 0.5) 0%, transparent 80%);
+    background: radial-gradient(circle at top left, rgba(240, 80, 240, 0.5) 0%, transparent 80%);
 
-    border-width: 0px 1px 3px 0px; 
-    border-color: #f050f0; 
+    border-width: 0px 1px 3px 0px;
+    border-color: #f050f0;
     box-shadow: 5px 5px 10px #f050f0;
     transition: box-shadow 0.3s ease-in-out;
-  }
-  .slides > div:hover { 
-    box-shadow: 7px 7px 17px rgba(240, 80, 240, 0.8);
-  }
+}
 
-  
-  .slider > a {
+.slides>div:hover {
+    box-shadow: 7px 7px 17px rgba(240, 80, 240, 0.8);
+}
+
+
+.slider>a {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -434,97 +442,123 @@ body {
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
-  }
-  .slider > a:active {
-    top: 1px;
-  }
-  .slider > a:focus {
-    background: #000;
-  }  
+}
 
-  .education-card {
+.slider>a:active {
+    top: 1px;
+}
+
+.slider>a:focus {
+    background: #000;
+}
+
+.education-card {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .education-card.active {
+}
+
+.education-card.active {
     transform: translateY(0);
-  }
-  .card-content {
+}
+
+.card-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .card-content h2 {
+    gap: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 0rem;
+}
+
+.card-content h2 {
     font-size: 1.8rem;
     color: white;
-    margin:0;
-  }
-  
-  .card-content p {
+    margin: 0;
+}
+
+.card-content p {
     font-size: 1.2rem;
+    color: white;
     margin: 0px;
-  }
-  
-  .card-content .course {
-    color: #f549f5;
+}
+
+.card-content .course {
+    color:  white;
     font-weight: bold;
-  }
-  
-  .card-content .subject {
-    color: #663399;
-  }
-  
-  .card-content .mark {
-    color: #333;
+    position: relative;
+    top: -1rem;
+    left:-3rem;
+}
+
+.card-content .subject {
+    position:relative;
+    color:white ;
+    top: -2rem;
+    left:-3rem;
+}
+
+.card-content .mark {
+    position:relative;
+    color:white;
     font-weight: bold;
-  }
-  
-  .card-content .time {
-    color: #999;
-  }
-  
+    top: -1rem;
+    left:-3.5rem;
+}
+
+.card-content .time {
+    color:white ;
+    position:relative;
+    top: -1rem;
+    left:-3.5rem;
+}
+
 
 
 /* keyFrames for animations  */
 
-@keyframes slideRight{
-    0%{
+@keyframes slideRight {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
-@keyframes slideBottom{
-    0%{
+
+@keyframes slideBottom {
+    0% {
         transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
-@keyframes slideLeft{
-    0%{
+
+@keyframes slideLeft {
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideAnimation {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
