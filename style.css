@@ -270,7 +270,9 @@ body {
     border-radius: 24%;
     position: absolute;
     bottom: 8.25rem;
+    /* bottom: 14.5rem; */
     left: 9.68rem;
+    /* left: 12.68rem; */
     z-index: 1;
     box-shadow: 0 0 5px #FD2CFF,
         0 0 20px #FD2CFF, 0 0 30px #FD2CFF,
@@ -284,6 +286,7 @@ body {
     position: absolute;
     right: 21.375rem;
     bottom: 34.875rem;
+    /* bottom: 40.875rem; */
     transform: translate(0, -50%);
     z-index: 1;
     animation: slideLeft 1s ease forwards;
@@ -346,7 +349,8 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
-    bottom: -10rem;
+    /* bottom: -10rem; */
+    bottom: -12rem;
     right: 20rem;
     animation: slideLeft 1s ease forwards;
     opacity: 0;
@@ -522,6 +526,7 @@ body {
     overflow: hidden;
     position: relative;
     bottom: -10rem;
+    /* bottom: -12rem; */
     right: 20rem;
     animation: slideLeft 1s ease forwards;
     opacity: 0;
@@ -624,6 +629,7 @@ body {
     overflow: hidden;
     position: relative;
     bottom: -10rem;
+    /* bottom: -12rem; */
     right: 20rem;
     animation: slideLeft 1s ease forwards;
     opacity: 0;
