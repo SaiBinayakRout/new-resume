@@ -164,16 +164,18 @@ body {
     background-repeat: no-repeat;
     /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
-.image_hover{
+
+.image_hover {
     position: absolute;
-    bottom:7.25rem ;
+    bottom: 7.25rem;
     right: 12.68rem;
     width: 23.19rem;
-    height:25.25rem ;
+    height: 25.25rem;
     background: transparent;
     transition: 2s;
 }
-.image_hover:hover{
+
+.image_hover:hover {
     background: #0c0c0c;
     opacity: .8;
 }
@@ -1076,5 +1078,478 @@ form textarea {
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+
+/* ----- reponsive------- for widths up to 810 pixels.  */
+
+/* home page   */
+
+
+@media (max-width: 900px) {
+
+    .landing {
+        padding: 0rem;
+        height: 100vh;
+    }
+
+    .name {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        position: absolute;
+        top: 7rem;
+        left: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .landing .intro {
+        position: absolute;
+        width: 34rem;
+        height: auto;
+        margin: 7rem 0;
+        top: 9rem;
+        left: 2rem;
+        z-index: 20;
+
+    }
+
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-download {
+        margin: 1rem auto;
+        font-size: 0.9rem;
+        position: absolute;
+        top: 13rem;
+    }
+
+    .photo {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 39rem;
+        left: 11rem;
+        height: auto;
+    }
+
+    .photo::before,
+    .image_hover {
+        width: 100%;
+        height: auto;
+        bottom: 4rem;
+        right: 2rem;
+    }
+
+
+    .landing .social-icons {
+        bottom: 8rem;
+        left: 8rem;
+        position: absolute;
+        transform: translate(50%, 0);
+    }
+
+    .landing .social-icons a {
+        font-size: 2rem;
+    }
+
+    .landing .about-button {
+        position: absolute;
+        bottom: 7rem;
+        right: 13rem;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* about section  */
+
+@media (max-width: 900px) {
+    .about-heading {
+        font-size: 1.5rem;
+        top: 4rem;
+        left: 5rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .photo_abt {
+        width: 100%;
+        text-align: center;
+        margin: 2rem auto;
+        order: 2;
+        animation-delay: 0s;
+        top: 8rem;
+        left: -14rem;
+    }
+
+    .photo_abt::before {
+        width: 15rem;
+        height: 15rem;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        bottom: 15rem;
+        right: 10rem;
+        transform: translate(0, 0);
+        gap: 1rem;
+    }
+
+    .nav-button {
+        width: 5rem;
+        height: 2rem;
+    }
+    .education-slide,
+    .skills-slide,
+    .experience-slide {
+        width: 17.44rem;
+        height: 19.4rem;
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        bottom: -10rem;
+        right: -10rem;
+        animation: slideLeft 1s ease forwards;
+        opacity: 0;
+    }
+    
+    
+    
+    /* .slides {
+        display: flex;
+        position: relative;
+        overflow-x: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 2rem;
+    
+    } */
+    
+    /* .slides>div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 23.19rem;
+        height: 25.25rem;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: transparent;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        border: 0px solid transparent;
+    
+    } */
+    
+    .edu>div,
+    .skl>div ,
+    .abt>div {
+        background: radial-gradient(circle at top left, rgba(255, 0, 170, 1) 0%, transparent 80%);
+    
+        border-width: 0px 1px 3px 0px;
+        border-color: #FF00AA;
+        box-shadow: 5px 5px 10px #FF00AA;
+        transition: box-shadow 0.3s ease-in-out;
+        height: 16rem;
+        width: 16rem;
+    }
+    
+    .edu>div:hover {
+        box-shadow: 7px 7px 17px rgba(255, 0, 170, 1);
+    }
+    
+    
+    .slider>a {
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0 0.5rem 0;
+        position: relative;
+    }
+    
+    .slider>a:active {
+        top: 1px;
+    }
+    
+    .slider>a:focus {
+        background: #000;
+    }
+    
+    .education-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .education-card.active {
+        transform: translateY(0);
+    }
+    
+    .card-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+    }
+    
+    .card-content h2 {
+        font-size: 1.2rem;
+        color: white;
+        margin: 0;
+    }
+    
+    .card-content p {
+        font-size: 1.2rem;
+        color: white;
+        margin: 0px;
+    }
+    
+    .card-content .course {
+        color: white;
+        font-weight: bold;
+        position: relative;
+        top: -2rem;
+        left: -2rem;
+    }
+    
+    .card-content .subject {
+        position: relative;
+        color: white;
+        top: -3rem;
+        left: -2rem;
+    }
+    
+    .card-content .mark {
+        position: relative;
+        color: white;
+        font-weight: bold;
+        top: -4rem;
+        left: -2.5rem;
+    }
+    
+    .card-content .time {
+        color: white;
+        position: relative;
+        top: -6rem;
+        left: -2.5rem;
+    }
+    
+    /* skill cards  */
+    .skills-slide {
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        bottom: -10rem;
+        right: -10rem;
+        animation: slideLeft 1s ease forwards;
+        opacity: 0;
+        width: 17.44rem;
+        height: 19.4rem;
+    } 
+    
+    .skl>div {
+        background: radial-gradient(circle at top left, #FD2CFF 0%, transparent 80%);
+    
+        border-width: 0px 1px 3px 0px;
+        border-color: #FD2CFF;
+        box-shadow: 5px 5px 10px #FD2CFF;
+        transition: box-shadow 0.3s ease-in-out;
+        height: 16rem;
+        width: 16rem;
+    }
+    
+    .skl>div:hover {
+        box-shadow: 7px 7px 17px #FD2CFF;
+    }
+    
+    .education-card#Hard-skill .heading1 {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.1rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 6rem;
+    }
+    
+    .education-card#Hard-skill .sub1 {
+        position: absolute;
+        top: 5rem;
+        left: 1rem;
+        font-size: 1rem;
+        color: white;
+        width: 5rem;
+    }
+    
+    .education-card#Hard-skill .heading2 {
+        position: absolute;
+        top: 8rem;
+        left: 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 8rem;
+    }
+    
+    .education-card#Hard-skill .sub2 {
+        position: absolute;
+        top: 12rem;
+        left: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        width: 8rem;
+    }
+    
+    /* For the second card */
+    .education-card#Soft-skills .heading1 {
+        position: absolute;
+        top: 1.5rem;
+        left: 0.5rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 6rem;
+    }
+    
+    .education-card#Soft-skills .sub1 {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        font-size: 1rem;
+        color: white;
+        width: 13rem;
+        text-align: justify;
+    }
+    
+    .education-card#Soft-skills .heading2 {
+        position: absolute;
+        top: 11rem;
+        left: 0.2rem;
+        font-size: 1.4rem;
+        color: white;
+        width: 8rem;
+    }
+    
+    .education-card#Soft-skills .sub2 {
+        position: absolute;
+        top: 13rem;
+        left: 1.1rem;
+        font-size: 1rem;
+        color: white;
+        width: 11rem;
+    }
+    
+    
+    /* experience cards  */
+    .experience-slide {
+        width: 16.44rem;
+        height: 19.4rem;
+        display: flex;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        bottom: -10rem;
+        right: -10rem;
+        animation: slideLeft 1s ease forwards;
+        opacity: 0;
+    }
+    
+    .abt>div {
+        background: radial-gradient(circle at top left, rgba(238, 241, 41, 1) 0%, transparent 80%);
+    
+        border-width: 0px 1px 3px 0px;
+        border-color: #eef129;
+        box-shadow: 5px 5px 10px #eef129;
+        transition: box-shadow 0.3s ease-in-out;
+        height: 16rem;
+        width: 16rem;
+    }
+    
+    .abt>div:hover {
+        box-shadow: 7px 7px 17px rgba(238, 241, 41, 1);
+    }
+    
+    .education-card#Experience .work-at {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+        width: 6rem;
+    }
+    
+    .education-card#Experience .postn {
+        position: absolute;
+        top: 4rem;
+        left: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        width: 12rem;
+    }
+    
+    .education-card#Experience .work {
+        position: absolute;
+        top: 6rem;
+        left: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        width: 13rem;
+        text-align: justify;
+    }
+    
+    .education-card#Experience .period {
+        position: absolute;
+        top: 12rem;
+        left: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        width: 9rem;
+    }
+    
+
+    
+
+    .slide-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+    }
+
+    .slide-button a {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0 0.25rem;
+    }
+
+
+    .page-links {
+        top: 11rem;
+        right: 2rem;
+        gap: 2rem;
     }
 }
