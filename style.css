@@ -149,16 +149,35 @@ body {
     display: block;
     width: 23.19rem;
     height: 25.25rem;
-    border: 2px solid #D875FF;
+    /* border: 2px solid #D875FF; */
     border-radius: 24%;
     position: absolute;
     bottom: 7.25rem;
-    right: 8.68rem;
+    right: 12.68rem;
     z-index: -1;
-    box-shadow: 0 0 5px #D875FF,
-        0 0 20px #D875FF, 0 0 30px #D875FF,
-        0 0 50px #D875FF, 0 0 80px #D875FF;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1),
+        0 0 50px rgba(0, 0, 0, 0.1), 0 0 80px rgba(0, 0, 0, 0.1); */
+    background-image: url(images/b&w.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
+.image_hover{
+    position: absolute;
+    bottom:7.25rem ;
+    right: 12.68rem;
+    width: 23.19rem;
+    height:25.25rem ;
+    background: transparent;
+    transition: 2s;
+}
+.image_hover:hover{
+    background: #0c0c0c;
+    opacity: .8;
+}
+
 
 .landing .social-icons {
     display: flex;
@@ -196,7 +215,7 @@ body {
 .landing .about-button {
     position: absolute;
     bottom: 7.3125rem;
-    right: 6.437rem;
+    right: 8.437rem;
     transform: translate(-50%, 50%);
     transition: background-color 0.4s;
     animation: slideLeft 1s ease forwards;
@@ -207,8 +226,7 @@ body {
 
 .landing .about-button .btn-about {
     text-decoration: none;
-    background-color: #FD2CFF;
-    background-color: #FD2CFF;
+    background-color: #24E0FF;
     color: #fff;
     border-radius: 50%;
     padding: 0.5rem 1rem;
@@ -222,10 +240,10 @@ body {
 }
 
 .landing .about-button:hover .btn-about {
-    background-color: #FD2CFF;
-    box-shadow: 0 0 5px #FD2CFF,
-        0 0 20px #FD2CFF, 0 0 42px #FD2CFF,
-        0 0 67px #FD2CFF, 0 0 130px #FD2CFF;
+    background-color: #24E0FF;
+    box-shadow: 0 0 5px #24E0FF,
+        0 0 20px #24E0FF, 0 0 42px #24E0FF,
+        0 0 67px #24E0FF, 0 0 130px #24E0FF;
 }
 
 /* about page  */
@@ -266,7 +284,11 @@ body {
     display: block;
     width: 23.19rem;
     height: 25.25rem;
-    border: 2px solid #FD2CFF;
+    background-image: url(images/color.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #24E0FF;
     border-radius: 24%;
     position: absolute;
     bottom: 8.25rem;
@@ -274,9 +296,9 @@ body {
     left: 9.68rem;
     /* left: 12.68rem; */
     z-index: 1;
-    box-shadow: 0 0 5px #FD2CFF,
-        0 0 20px #FD2CFF, 0 0 30px #FD2CFF,
-        0 0 50px #FD2CFF, 0 0 80px #FD2CFF;
+    box-shadow: 0 0 5px #24E0FF,
+        0 0 20px #24E0FF, 0 0 30px #24E0FF,
+        0 0 50px #24E0FF, 0 0 80px #24E0FF;
 }
 
 .nav-buttons {
@@ -318,13 +340,13 @@ body {
 }
 
 .skills-button {
-    background-color: #24E0FF;
+    background-color: #FD2CFF;
 }
 
 .skills-button:hover {
-    box-shadow: 0 0 5px #24E0FF,
-        0 0 7px #24E0FF, 0 0 10px #24E0FF,
-        0 0 18px #24E0FF, 0 0 23px #24E0FF;
+    box-shadow: 0 0 5px #FD2CFF,
+        0 0 7px #FD2CFF, 0 0 10px #FD2CFF,
+        0 0 18px #FD2CFF, 0 0 23px #FD2CFF;
 }
 
 .experience-button {
@@ -349,8 +371,8 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
-    /* bottom: -10rem; */
-    bottom: -12rem;
+    bottom: -10rem;
+    /* bottom: -12rem; */
     right: 20rem;
     animation: slideLeft 1s ease forwards;
     opacity: 0;
@@ -533,16 +555,16 @@ body {
 }
 
 .skl>div {
-    background: radial-gradient(circle at top left, rgba(36, 224, 255, 1) 0%, transparent 80%);
+    background: radial-gradient(circle at top left, #FD2CFF 0%, transparent 80%);
 
     border-width: 0px 1px 3px 0px;
-    border-color: #24E0FF;
-    box-shadow: 5px 5px 10px #24E0FF;
+    border-color: #FD2CFF;
+    box-shadow: 5px 5px 10px #FD2CFF;
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .skl>div:hover {
-    box-shadow: 7px 7px 17px rgba(36, 224, 255, 1);
+    box-shadow: 7px 7px 17px #FD2CFF;
 }
 
 .education-card#Hard-skill .heading1 {
@@ -715,6 +737,7 @@ body {
 
 .about-nav-btn .btn-home {
     background-color: #D875FF;
+    transition: 1s;
 }
 
 .about-nav-btn .btn-home:hover {
@@ -729,6 +752,7 @@ body {
 
 .about-nav-btn .btn-project {
     background-color: #446af4;
+    transition: 1s;
 }
 
 .about-nav-btn .btn-project:hover {
@@ -743,6 +767,7 @@ body {
 
 .about-nav-btn .btn-contacts {
     background-color: #7FFF00;
+    transition: 1s;
 }
 
 .about-nav-btn .btn-contacts:hover {
@@ -930,8 +955,9 @@ body {
     color: #7FFF00;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-.icons-right a:hover{
-    transform: translateY(-5px); 
+
+.icons-right a:hover {
+    transform: translateY(-5px);
 }
 
 .form {
@@ -962,7 +988,7 @@ form textarea {
     font-size: 1rem;
     margin-top: 0.625rem;
     color: #fff;
-    transition:  0.4s;
+    transition: 0.4s;
     border: 3px solid #7FFF00;
     border-radius: 0.625rem;
     cursor: pointer;
@@ -975,10 +1001,10 @@ form textarea {
     background-color: #7FFF00;
     color: white;
     box-shadow: 0 0 5px #7FFF00,
-    0 0 7px #7FFF00,
-    0 0 10px #7FFF00,
-    0 0 18px #7FFF00,
-    0 0 23px #7FFF00;
+        0 0 7px #7FFF00,
+        0 0 10px #7FFF00,
+        0 0 18px #7FFF00,
+        0 0 23px #7FFF00;
 }
 
 .footer {
@@ -987,7 +1013,7 @@ form textarea {
     left: 0rem;
     width: 100%;
     height: 5rem;
-    background:linear-gradient(to bottom, #a5e06a 0%, #a5e06a 50%, transparent 100%);
+    background: linear-gradient(to bottom, #a5e06a 0%, #a5e06a 50%, transparent 100%);
     padding: 1.25rem 0;
     display: flex;
     align-items: center;
@@ -996,8 +1022,9 @@ form textarea {
     font-weight: 300;
     margin-top: 1.25rem;
 }
-.copyright{
-    color: #000; 
+
+.copyright {
+    color: #000;
 }
 
 
