@@ -1086,16 +1086,17 @@ form textarea {
 }
 
 
-/* ----- reponsive------- for widths up to 810 pixels.  */
+/* ----- reponsive------- for widths up to 900 pixels.  */
 
 /* home page   */
 
 
-@media (min-width: 420px) and (max-width: 900px){
+@media (min-width: 430px) and (max-width: 900px){
 
     .landing {
         padding: 0rem;
         height: 100vh;
+        position: relative;
     }
 
     .name {
@@ -1148,7 +1149,7 @@ form textarea {
 
 
     .landing .social-icons {
-        bottom: 8rem;
+        bottom: 6rem;
         left: 8rem;
         position: absolute;
         transform: translate(50%, 0);
@@ -1172,12 +1173,16 @@ form textarea {
 
 /* about section  */
 
-@media (min-width: 420px) and (max-width: 900px){
+@media (min-width: 430px) and (max-width: 900px){
+    /* #about{
+        position: relative;
+    } */
+
 
     .about-heading {
         font-size: 1.5rem;
-        top: 4rem;
-        left: 5rem;
+        top: 1rem;
+        left: 4rem;
     }
 
     .about {
@@ -1194,6 +1199,7 @@ form textarea {
         animation-delay: 0s;
         top: 8rem;
         left: -14rem;
+        display: block;
     }
 
     .photo_abt::before {
@@ -1202,6 +1208,7 @@ form textarea {
         bottom: 4rem;
         left: 50%;
         transform: translateX(-50%);
+        display: block;
     }
 
     .nav-buttons {
@@ -1501,9 +1508,6 @@ form textarea {
         width: 9rem;
     }
 
-
-
-
     .slide-button {
         display: flex;
         flex-direction: row;
@@ -1529,7 +1533,7 @@ form textarea {
 
 /* project page  */
 
-@media (min-width: 420px) and (max-width: 900px) {
+@media (min-width: 430px) and (max-width: 900px) {
     #project {
         padding: 3.125rem 0;
         margin-bottom: 0.8125rem;
@@ -1650,25 +1654,29 @@ form textarea {
 
 /* contact page  */
 
-@media (min-width: 420px) and (max-width: 900px) {
+@media (min-width: 430px) and (max-width: 900px) {
+
+    #contacts{
+        position: relative;
+    }
     .heading {
-        top: 14.625rem;
-        left: 7.625rem;
+        top: 26.625rem;
+        left: 2.625rem;
     }
 
     .icons-left {
-        top: 21.75rem;
-        left: 7.625rem;
+        top: 32.75rem;
+        left: 4.625rem;
     }
 
     .icons-right {
-        top: 29.75rem;
-        /* left: auto; */
-        right: 36.625rem;
+        top: 39.75rem;
+        left: 5rem;
+        /* right: 45.625rem; */
     }
 
     .form {
-        top: 13.5rem;
+        top: 27.5rem;
         /* left: auto; */
         right: 7.625rem;
         width: 20rem;
@@ -1682,7 +1690,7 @@ form textarea {
 
 /* for less that 420 px  */
 
-/* @media (max-width: 420px) {
+@media (max-width: 420px) {
 
 
     .landing {
@@ -1752,10 +1760,10 @@ form textarea {
 
     .landing .about-button {
         display: none;
-        position: absolute; */
-        /* bottom: 7rem;
-        right: 13rem; */
-        /* transform: translate(-50%, 0);
+        position: absolute;
+        bottom: 7rem;
+        right: 13rem; 
+         transform: translate(-50%, 0);
     }
 
     #navigation {
@@ -1868,7 +1876,7 @@ form textarea {
         transform: none;
         opacity: 1;
     }
-} */
+} 
 
  /* about page  */
 
@@ -1876,19 +1884,19 @@ form textarea {
     font-size: 1.5rem;
     top: 3rem;
     left: 1rem;
-} */
+}
 
-/* .about {
+.about {
     flex-direction: column;
     align-items: center;
     height: auto;
-} */
-
-/* .photo_abt {
-    display: block;
 }
 
-.nav-buttons {
+.photo_abt {
+    display: block;
+} */
+
+/* .nav-buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1970,7 +1978,7 @@ form textarea {
 
 /* project page  */
 
-/* @media (max-width: 420px){
+@media (max-width: 420px){
 
 #project {
     padding: 3.125rem 0;
@@ -2091,12 +2099,12 @@ form textarea {
         0 0 0.625rem #446af4, 0 0 1.25rem #446af4,
         0 0 2.5rem #446af4, 0 0 5rem #446af4;
 }
-} */
+}
 
 /* contact page  */
 
 
-/* .heading {
+/* #contacts .heading {
     top: 0.625rem;
     left: 1.625rem;
 }
@@ -2109,14 +2117,14 @@ form textarea {
 
 .icons-right {
     top: 9.4rem;
-    left: 2.6rem; */
-    /* right:-1rem; */
-/* }
+    left: 2.6rem;
+    right:-1rem;
+ }
 
 .form {
-    top: 13.5rem;
-    /* left: auto; */
-    /* right: 7.625rem;
+    top: 25.5rem;
+    left: auto;
+ right: 7.625rem;
     width: 14rem;
     height: 2rem;
 }
@@ -2127,4 +2135,4 @@ textarea{
 .btn-submit {
     top: 16rem;
     right: 4rem;
-} */ 
+}  */
