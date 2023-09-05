@@ -1,3 +1,78 @@
+@media  (max-width: 420px){
+    .landing {
+        padding: 0rem;
+        height: 100vh;
+    }
+    
+    .name {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        position: absolute;
+        top: 1rem;
+        left: 0rem;
+        font-size: 2.2rem;
+    }
+    
+    .landing .intro {
+        position: absolute;
+        width: 16rem;
+        height: auto;
+        margin: 7rem 0;
+        top: 5rem;
+        left: 0.3rem;
+        z-index: 20;
+    
+    }
+    
+    .intro h2 {
+        font-size: 1.2rem;
+    }
+    
+    .btn-download {
+        margin: 1rem auto;
+        font-size: 0.9rem;
+        position: absolute;
+        top: 23rem;
+    }
+    
+    .photo {
+        width: 100%;
+        margin-top: 2rem;
+        position: absolute;
+        top: 39rem;
+        left: 23rem;
+        height: auto;
+    }
+    
+    .photo::before,
+    .image_hover {
+        width: 100%;
+        height: auto;
+        bottom: 4rem;
+        right: 2rem;
+    }
+    
+    
+    .landing .social-icons {
+        bottom: 2rem;
+        left: -8rem;
+        position: absolute;
+        transform: translate(50%, 0);
+    }
+    
+    .landing .social-icons a {
+        font-size: 1.7rem;
+    }
+    
+    .landing .about-button {
+        display: none;
+        position: absolute;
+        bottom: 7rem;
+        right: 13rem; 
+         transform: translate(-50%, 0);
+    }
+}
+
 @media (max-width: 420px) {
 
 
@@ -91,9 +166,9 @@
     height: auto;
 }*/
 
-.photo_abt {
+/* .photo_abt {
     display:none;
-}
+} */
 
 /* .nav-buttons {
     display: flex;
@@ -168,12 +243,12 @@
 }*/
 
 
-.page-links {
+/* .page-links {
     display: none;
     top: 11rem;
     right: 2rem;
     gap: 2rem;
-}
+} */
 
 /* project page  */
 
